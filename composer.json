@@ -1,0 +1,23 @@
+{
+  "name": "edwrodrig/example",
+  "description": "Script to build and deploy Qt apps",
+  "authors": [
+    {
+      "name": "Edwin Rodríguez",
+      "email": "edwrodrig@gmail.com",
+      "homepage": "http://www.edwin.cl",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.2",
+    "edwrodrig/qt_app_builder": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "edwrodrig\\example\\": "src/"
+    }
+  }
+}
