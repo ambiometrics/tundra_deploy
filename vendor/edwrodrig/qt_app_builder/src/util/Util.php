@@ -17,4 +17,18 @@ class Util
         $lastCallerFileDir = dirname($lastCallerFile);
         return $lastCallerFileDir;
     }
+
+    public static function testPhpScript($script) : bool {
+        $testCommand = 'php -l ' . $script;
+        printf("Testing script with [%s]...\n", $testCommand);
+        exec($testCommand , $output, $return);
+        return $return === 0;
+    }
+
+    public static function runPhpScript($script) : bool {
+        $runCommand = 'php ' . $script;
+        printf("Executing script with [%s]...\n", $runCommand);
+        passthru($runCommand,$return);
+        return $return === 0;
+    }
 }

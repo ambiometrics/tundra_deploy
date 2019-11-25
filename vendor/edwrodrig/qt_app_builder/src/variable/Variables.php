@@ -34,6 +34,9 @@ use Exception;
  * @method static QtDirectory QtDirectory()
  * @method static Compiler Compiler()
  * @method static QtCompilerDirectory QtCompilerDirectory()
+ * @method static SourcesToolsDirectory SourcesToolsDirectory()
+ * @method static SourcesToolsGetAppsScript SourcesToolsGetAppsScript()
+ * @method static SourcesToolsInstallToDirScript SourcesToolsInstallToDirScript()
  */
 class Variables
 {

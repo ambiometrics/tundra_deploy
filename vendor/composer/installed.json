@@ -1,17 +1,17 @@
 [
     {
         "name": "edwrodrig/qt_app_builder",
-        "version": "0.0.2",
-        "version_normalized": "0.0.2.0",
+        "version": "0.2.0",
+        "version_normalized": "0.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/edwrodrig/qt_app_builder.git",
-            "reference": "25dc89d73a281511e7dccfd5e49ae0d16d7957ea"
+            "reference": "366fd84c93a7d026b2ac50c9b30f8b7878c4dad2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/edwrodrig/qt_app_builder/zipball/25dc89d73a281511e7dccfd5e49ae0d16d7957ea",
-            "reference": "25dc89d73a281511e7dccfd5e49ae0d16d7957ea",
+            "url": "https://api.github.com/repos/edwrodrig/qt_app_builder/zipball/366fd84c93a7d026b2ac50c9b30f8b7878c4dad2",
+            "reference": "366fd84c93a7d026b2ac50c9b30f8b7878c4dad2",
             "shasum": ""
         },
         "require": {
@@ -21,7 +21,7 @@
         "require-dev": {
             "phpunit/phpunit": "^7.0"
         },
-        "time": "2019-11-21T15:15:28+00:00",
+        "time": "2019-11-25T15:09:47+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

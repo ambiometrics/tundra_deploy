@@ -41,6 +41,7 @@ class Step
 
             Variables::Qmake()->call();
             Variables::Make()->call();
+
         } catch ( VariableNotFoundException $exception ) {
             fprintf(STDERR, "%s [%s]", $exception->getMessage(), $exception->getRecoverMessage());
         }
@@ -64,6 +65,14 @@ class Step
             Variables::BinaryDeployFilepath()->changeModeToExecutable();
 
             Variables::QtDeploy()->call();
+
+            if ( Variables::SourcesToolsGetAppsScript()->tryToFind()  ) {
+                Variables::SourcesToolsInstallToDirScript()->find();
+
+                Variables::SourcesToolsGetAppsScript()->getApps();
+                Variables::SourcesToolsInstallToDirScript()->installToDeployDirectory();
+
+            }
 
         } catch ( VariableNotFoundException $exception ) {
             fprintf(STDERR, "%s [%s]", $exception->getMessage(), $exception->getRecoverMessage());
