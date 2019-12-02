@@ -49,7 +49,7 @@ class Git extends Variable
         $repoUrl = Variables::Repository()->get();
 
         printf("Cloning with git...\n");
-        $command = sprintf("%s clone %s sources", $git, $repoUrl);
+        $command = sprintf("%s clone %s sources --single-branch --depth=1", $git, $repoUrl);
         printf("Command to execute [%s]\n", $command);
 
         passthru($command, $return_var);
